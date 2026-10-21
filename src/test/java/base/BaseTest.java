@@ -22,7 +22,7 @@ public class BaseTest {
 
     @BeforeClass
     public static void globalSetUp() {
-        RestAssured.baseURI = "https://stellarburgers.nomoreparties.site";
+        RestAssured.baseURI = "https://qa-stellarburgers.education-services.ru";
         requestSpec = new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .addFilter(new AllureRestAssured())
